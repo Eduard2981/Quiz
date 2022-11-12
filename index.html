@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="../style.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat&display=swap" rel="stylesheet">
+
+    <title>Chestionar online</title>
+</head>
+<body>
+    <!-- ////////////////Navbar/////////////////////////// -->
+    <header>
+        <div class="logo">
+             <i  onclick="location.reload()" class="fa-sharp fa-solid fa-house"></i>
+      <h2 onclick="location.reload()">Home</h2>
+        </div>
+        <h1 id="txt"></h1>
+
+    </header>
+    <!-- /////////////First question/////////////////// -->
+    <div class="hello">
+        <div id="please">
+<h1>Pentru a continua, va rugam sa introduceti numele!<i class="fa-solid fa-face-smile-wink"></i></h1>
+<div class="inputLoc">
+    <!-- <form action="" > -->
+<input  minlength="3" placeholder="ex: Cristiano Ronaldo" required class="userName" type="text">
+<input type="submit" id="nameBtn" value="Submit">
+    <!-- </form> -->
+ </div>
+        <p class="message">Completeaza acest camp.</p>
+    </div>
+</div>
+
+ <!-- //////////////The second////////////// -->
+<div id="second">
+ <div class="content">
+    <h2 class="nameLoc">Salutare</h2>
+    <p>Stiai ca? Primul Mortal Kombat a fost făcut de patru oameni.</p>
+    <p>Sau</p>
+    <p>Serverele World Of Warcraft sunt compuse din 20000 de computere.</p><br>
+    <p>Test Online - Ce joc ti se potriveste?</p>
+ </div>
+ <button id="startBtn">Start</button>
+</div>
+
+<!--///////////// Form DIV //////////////////////////////////-->
+
+<div id="formDiv">
+    <div class="formContainer">
+
+        <form id="form" method="get" action="result.html" onsubmit="return validate(this)">
+            <div class="info"><label for="age">1. Varsta</label><br>
+            <input type="date" id="age" name="age"></div>
+
+   
+    <div class="info">
+        <label for="city">2. Oras</label><br>
+    <select name="city" id="city">
+        <option value="Iasi">Iasi</option>
+        <option value="Bucuresti">Bucuresti</option>
+        <option value="Constanta">Constanta</option>
+        <option value="Brașov">Brașov</option>
+        <option value="Cluj-Napoca">Cluj-Napoca</option>
+        <option value="Timișoara">Timișoara</option>
+        <option value="Galați">Galați</option>
+        <option value="Craiova">Craiova</option>
+        <option value="Ploiești">Ploiești</option>
+        <option value="Oradea">Oradea</option>
+        <option value="Brăila">Brăila</option>
+        <option value="Sibiu">Sibiu</option>
+    </select></div>
+    
+   
+<div class="radioDiv">
+    <h1>3. Jucați vreunul din tipurile de jocuri pe calculator menționate mai jos?</h1>
+
+<p><input id="gen radio1" type="radio" class="gen" name="gen" value="action" checked />  Action</p>
+<p><input id="gen radio2" type="radio" class="gen" name="gen" value="shooter" /> Shooter</p>
+<p><input id="gen radio3" type="radio" class="gen" name="gen" value="sport" /> Sport</p>
+<p><input id="gen radio4" type="radio" class="gen" name="gen" value="nothing" /> Nu am preferinte</p>
+</div>
+
+<div class="checkDiv">
+    <h1>4. Cât de des jucați jocuri?</h1>
+
+    <p><input id="time radio_1" type="radio" name="time" class="time"  value="Zilnic" checked /> Zilnic</p>
+    <p><input id="time radio_2" type="radio" name="time" class="time" value="De câteva ori pe săptămână" /> De câteva ori pe săptămână</p>
+    <p><input id="time radio_3" type="radio" name="time" class="time" value="De câteva ori pe lună" /> De câteva ori pe lună</p>
+    <p><input id="time radio_4" type="radio" name="time" class="time" value="De câteva ori pe an" /> De câteva ori pe an</p>
+
+    </div>
+    <div class="termsDiv">
+        
+<p><input id="submitBtn" type="submit" value="Submit"><input type="checkbox" name="agree" id="terms">  I agree to the <a href="https://policies.google.com/terms?hl=ro" target="_blank">terms & conditions</a> </p>
+    </div>
+    </form>
+</div>
+</div>
+
+    
+
+
+<!-- End form -->
+
+
+
+
+    <!--////////////////// Javascript page ////////////////////////////////-->
+    <script src="../index.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/f94ed17f54.js" crossorigin="anonymous"></script>
+    
+</body>
+</html>

@@ -1,0 +1,298 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #071d2b;
+    color: #fff;
+}
+
+label, a, button, i, h1, h2 {
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+p{
+    font-size: 2 rem;
+    color: #ffffff;
+}
+i {
+    color: #ffffff;
+}
+
+/* header div //////////////////////////////////////////////////////////////////////////*/
+header{
+    padding: 20px 17px 5px ;
+    font-size: 35px;
+     background-color: #00243a;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+header .logo h2, i{
+    padding-left: 10px;
+    background-color: #00243a;
+    cursor: pointer;
+    color: #fff;
+}
+header .logo h2{
+    padding-bottom: 0px;
+    font-size: 30px;
+}
+header .logo{
+    display: flex;
+}
+header h1{
+    font-size: 30px;
+}
+#txt{
+    padding-right: 40px;
+    background-color: #00243a;
+}
+
+/* hello div /////////////////////////////////////////////////////////////////////////*/
+#nameBtn{
+	box-shadow:inset 0px 1px 0px 0px #54a3f7;
+	background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+	background-color:#007dc1;
+	border-radius:10px;
+	border:1px solid #124d77;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	padding:8px 22px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #154682;
+    margin-left: 5px;
+    margin-top: 49px;
+    width: 100px;
+}
+
+
+#nameBtn:hover {
+	background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+	background-color:#0061a7;
+}
+.inputLoc{
+    display: flex;
+    align-items: center;
+
+}
+.hello{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hello .message{
+    color: rgb(255, 21, 21);
+    font-size: 1.2rem;
+    padding-top: 3px;
+    visibility: hidden;
+    outline: none;
+    z-index: 1;
+  
+}
+#please{
+ padding-top: 100px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+#please h1{
+    background-color: #022134;
+}
+#please .userName{
+    z-index: 2;
+width: 260px;
+margin-top: 50px;
+font-size: 1.3rem;
+    border: 3px solid #000000;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+    background-color:#ffffff; 
+    height: 41px;
+    padding-left: 8px;
+}
+
+
+#please h1 i{
+    color: yellow;
+}
+
+/*SECOND  DIV /////////////////////////////////////////////////////////////////////////////////////////////*/
+#second{ 
+    visibility: hidden;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+.content{
+    text-align: center;
+}
+.content h1{
+    font-family: 'Inter Bold',sans-serif;
+}
+
+.content p{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px 10px;
+    font-family: "Inter Regular", sans-serif;
+}
+
+button{
+        background-color: #0070f6;
+    border-width: 0;
+}
+#startBtn {
+  background: #40ff00;
+  background-image: -webkit-linear-gradient(top, #40ff00, #0da605);
+  background-image: -moz-linear-gradient(top, #40ff00, #0da605);
+  background-image: -ms-linear-gradient(top, #40ff00, #0da605);
+  background-image: -o-linear-gradient(top, #40ff00, #0da605);
+  background-image: linear-gradient(to bottom, #40ff00, #0da605);
+  -webkit-border-radius: 7;
+  -moz-border-radius: 7;
+  border-radius: 7px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 30px;
+  padding: 10px 40px 10px 40px;
+  text-decoration: none;
+}
+
+#startBtn:hover {
+   background: #29de00;
+  background-image: -webkit-linear-gradient(top, #29de00, #2bba04);
+  background-image: -moz-linear-gradient(top, #29de00, #2bba04);
+  background-image: -ms-linear-gradient(top, #29de00, #2bba04);
+  background-image: -o-linear-gradient(top, #29de00, #2bba04);
+  background-image: linear-gradient(to bottom, #29de00, #2bba04);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/*////////////////// Form Div///////////////////////////// */
+
+form{
+    background-color: #444442;
+}
+#formDiv{
+      align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  visibility: hidden;
+}
+.formContainer{
+    display: flex;
+    justify-content: center;
+      background-color: #444442;
+  border-radius: 20px;
+  box-sizing: border-box;
+  height: 900px;
+  padding: 20px 50px;
+  width: 800px;
+}
+
+
+ div.info [type=date], select {
+    background-color: #2d2d2d;
+        border-radius: 12px;
+        box-sizing: border-box;
+        color: rgb(255, 255, 255);
+        font-size: 1.2rem;
+        height: 40px;
+        margin-top: 15px;
+        padding: 0px 20px;
+        width: 200px;
+        border: 1px solid #ccc;
+}
+
+.formContainer div.info{
+    padding: 15px 0px;
+    background-color:#444442 ;
+}
+
+.formContainer label,h1{
+background-color: #444442;
+margin-left: 5px;
+font-size: 1.5rem;
+}
+
+.formContainer div{
+    background-color: #444442;
+}
+
+.radioDiv{
+    padding-top: 20px;
+}
+
+div.radioDiv h1{
+    padding-bottom: 20px;
+}
+
+div.radioDiv p{
+    padding: 5px 0px;
+    background-color: #444442;
+    font-size: 1.5rem;
+}
+
+
+.checkDiv {
+    padding-top: 30px;
+    font-size: 1.5rem;
+}
+
+.checkDiv h1{
+    padding-bottom: 20px;
+}
+
+.checkDiv p{
+    padding: 5px 0px;
+        background-color: #444442;
+        font-size: 1.5rem;
+}
+
+.termsDiv, .termsDiv p, input, a{
+background-color: #444442;
+font-size: 1.2rem;
+}
+
+#submitBtn {
+    box-shadow: inset 0px 0px 0px 0px #caefab;
+    background: linear-gradient(to bottom, #77d42a 5%, #59b80b 100%);
+    background-color: #77d42a;
+    border-radius: 10px;
+    border: 2px solid #268a16;
+    margin: 40px 30px 30px 10px;
+    cursor: pointer;
+    color: #306108;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 26px;
+    text-decoration: none;
+    text-shadow: 0px 0px 35px #aade7c;
+}
+
+#submitBtn:hover {
+    background: linear-gradient(to bottom, #59b80b 5%, #77d42a 100%);
+    background-color: #59b80b;
+}
+
+#submitBtn:active {
+    position: relative;
+    top: 1px;
+}
+
+
+
